@@ -1,156 +1,106 @@
-# Support Ticket Classification & Priority Prediction
+# 📊 Customer Support Ticket Classification System
 
-## Overview
+## 🚀 Project Overview
+The Customer Support Ticket Classification System is a Machine Learning-based project designed to automatically classify customer support tickets into appropriate categories and predict their priority level.
 
-This project uses Natural Language Processing (NLP) and Machine Learning to automatically classify customer support tickets and predict their priority levels.
-
-The system helps organizations improve support operations by reducing manual effort and enabling faster response times.
-
----
-
-## Objective
-
-Build an intelligent system that can:
-
-* Categorize support tickets into different types.
-* Predict ticket priority levels.
-* Improve efficiency of customer support teams.
+In real-world companies, thousands of support tickets are generated daily. Manually sorting them takes a lot of time and effort. This system automates the process using Natural Language Processing (NLP) and Machine Learning techniques, improving efficiency and reducing response time.
 
 ---
 
-## Technologies Used
+## 🎯 Problem Statement
+Customer support teams receive large volumes of tickets such as complaints, queries, and requests. Manually analyzing and categorizing them leads to:
+- Delayed responses
+- Human errors in classification
+- Inefficient workflow management
 
-* Python
-* Pandas
-* NLTK
-* Scikit-learn
-* Matplotlib
-* Seaborn
-
----
-
-## Dataset
-
-Customer Support Ticket Dataset
-
-Features used:
-
-* Ticket Description
-* Ticket Type
-* Ticket Priority
+This project solves these issues by building an automated classification system using ML models.
 
 ---
 
-## Project Workflow
-
-### 1. Data Preprocessing
-
-* Removed missing values
-* Converted text to lowercase
-* Removed numbers
-* Removed punctuation
-* Removed stopwords
-
-### 2. Feature Extraction
-
-TF-IDF Vectorization was used to convert text into numerical features.
-
-### 3. Ticket Category Classification
-
-Predicted categories include:
-
-* Billing inquiry
-* Technical issue
-* Product inquiry
-* Refund request
-* Cancellation request
-
-### 4. Priority Prediction
-
-Predicted priority levels include:
-
-* Critical
-* High
-* Medium
-* Low
-
-### 5. Model Used
-
-Multinomial Naive Bayes
-
-### 6. Evaluation Metrics
-
-* Accuracy
-* Precision
-* Recall
-* F1-score
-* Classification Report
-* Confusion Matrix
+## 🧠 Objectives
+- Automatically classify customer support tickets into correct categories
+- Predict the priority level of each ticket
+- Reduce manual workload in customer support teams
+- Improve response time and customer satisfaction
+- Build an end-to-end machine learning pipeline
 
 ---
 
-## Outputs
-
-Generated confusion matrices:
-
-* ticket_type_confusion_matrix.png
-* priority_confusion_matrix.png
-
----
-
-## Sample Prediction
-
-Input:
-
-"My laptop is overheating and shutting down frequently"
-
-Predicted Category:
-
-Cancellation request
-
-Predicted Priority:
-
-Medium
+## 🛠️ Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
 
 ---
 
-## Project Structure
+## 📂 Dataset Description
+- Ticket text (user query/complaint)
+- Category labels
+- Priority labels
 
-FUTURE_ML_02
+---
 
-├── data
-
-│ └── customer_support_tickets.csv
-
-├── outputs
-
-│ ├── ticket_type_confusion_matrix.png
-
-│ └── priority_confusion_matrix.png
-
-├── notebooks
-
+## 📁 Project Structure
+future_ml_02/
+│
+├── data/
+├── outputs/
 ├── main.py
-
-├── README.md
-
 ├── requirements.txt
-
-└── .gitignore
-
----
-
-## Future Improvements
-
-* Use advanced NLP techniques.
-* Experiment with different machine learning models.
-* Improve classification accuracy.
-* Deploy the model as a web application.
+└── README.md
 
 ---
 
-## Author
+## ⚙️ Workflow
 
+1. Data Collection
+2. Data Preprocessing
+3. Feature Engineering
+4. Model Training
+5. Model Evaluation
+6. Prediction
+7. Visualization
+
+---
+
+## 📊 Results
+- Successfully classifies support tickets into correct categories
+- Predicts priority levels effectively
+- Visualization stored in outputs folder
+
+---
+
+## 📦 Installation
+
+git clone https://github.com/your-username/future_ml_02.git  
+cd future_ml_02  
+pip install -r requirements.txt  
+
+---
+
+## ▶️ How to Run
+
+python main.py
+
+---
+
+## 📈 Applications
+- Customer support automation
+- Helpdesk ticket management
+- IT service systems
+
+---
+
+## 🔮 Future Improvements
+- Add BERT-based model
+- Deploy using Flask/Streamlit
+- Real-time dashboard
+- Cloud deployment
+
+---
+
+## 👨‍💻 Author
 Kumpati Agape
-
-Future Interns Machine Learning Task 2
